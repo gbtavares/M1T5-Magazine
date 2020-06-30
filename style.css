@@ -4,63 +4,63 @@
     text-decoration: none;
     font-family: 'Martel', serif;
 }
-/*Ícones para contato - primeiro bloco*/
+/*Header*/
+    /*Primeiro bloco - Ícones para contato*/
 .icons{
     width: 100%;
     height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;   
-    /*background-color: rgba(0, 0, 0, 0.233);*/
 }
 .icons img{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     margin: 0px 0px 0px 30px;
 }
-/*Título principal - Moana*/
-#title{
-    width: 140px;
-    height: 70px;
-    font-size: 43px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    left: 615px;
-    top: 90px;
-    /*background-color: rgba(0, 0, 255, 0.315);*/
-}
 /*Menu*/
+    /*Caixa do menu de navegação*/
 .menu{
-    width: 85%;
-    height: 40px;
-    margin: 10px 85px 45px 85px;
+    width: 100%;
+    height: 90px;
     display: flex;
-    /*background-color: rgba(43, 255, 0, 0.438);*/
-    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
 }
-    /*Primeiro bloco - Home/ About/ Service*/
+    /*Primeira divisão do menu - Home/ About/ Service*/
 .about{
-    width: 400px;
-    height: 40px;
+    width: 376px;
+    height: 42px;
+    margin-left: 67px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    /*background-color: rgba(255, 127, 80, 0.432);*/
+    justify-content: space-between;
+    align-items: center;
 }
 .about a{
     color: black;
     font-size: 18px;
     font-weight: 600;
 }
-    /*Segundo bloco - Blog/ Portifolio/ Contact*/
-.blog{
-    width: 400px;
-    height: 40px;
-    margin-left: 430px;
+/*Título principal - Moana*/
+.title{
+    width: 426px;
+    height: 98px;
+    margin-left: 50px;
+    font-size: 58px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    /*background-color: rgba(255, 127, 80, 0.432);*/
+    justify-content: center;
+    align-items: center;
+}
+    /*Segunda divisão do menu - Blog/ Portifolio/ Contact*/
+.blog{
+    width: 430px;
+    height: 42px;
+    margin-right: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .blog a{
     color: black;
@@ -70,14 +70,13 @@
 /*Main*/
 #main{
     width: 100%;
-    /*background-color: rgba(0, 0, 0, 0.493);*/
 }
-/*Seção de Introdução*/
+    /*Seção de Introdução*/
     /*Imagem Principal*/
 .intro{
     width: 100%;
     height: 130vh;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 .intro img{
     width: 100%;
@@ -115,4 +114,209 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*Seção dos conteúdos principais - Courses 1, 2 e 3*/
+    /*Caixa inteira: divisão Imagem + divisão Course 1,e 3*/
+.course-boxes{
+    width: 100%;
+    height: 900px;
+    margin-bottom: 95px;
+    display: flex;
+}
+    /*Caixa inteira: divisão Imagem + divisão Course 2*/
+#course-boxes{
+    width: 100%;
+    height: 900px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+    /*Divisão 1 da caixa inteira, Imagem - Course 1, 2 e 3*/
+.course-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-image img{
+    width: 600px;
+    height: 800px;
+}
+    /*Divisão 2 da caixa inteira, Texto - Course 1, 2 e 3*/
+.course-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /*Divisão 2, borda rosa - Course 1, 2 e 3*/
+.text-decoration{
+    width: 600px;
+    height: 800px;
+    border: 3px solid #F49C9C;
+    border-radius: 5px;
+}
+    /*Divisão 2, Botões Read More*/
+.button{
+    width: 140px;
+    height: 53px;
+    margin:55px 0px 0px 220px;
+    background: #F49C9C;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button p{
+    color: #FFF0F0;
+    font-weight: bold;
+    font-size: 18px;
+}
+    /*Divisão 2, Subtítulo*/
+.subtitle{
+    width: 600px;
+    height: 140px;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+    /*Divisão 2, Texto*/
+.text{
+    width: 540px;
+    height: 560px;
+    font-size: 18px;
+    margin: 20px 26px 0px 34px;
+    display: flex;
+    align-items: center;
+}
+/*Footer*/
+.footer{
+    width: 100%;
+    position:relative;
+}
+    /*Fundo do rodapé*/
+.footer-background{
+    width: 100%;
+    height: 776px;
+    margin-top: 180px;
+}
+.footer-background img{
+    width: 100%;
+    height: 776px;
+}
+.footer-mascara{
+    width: 100%;
+    height: 776px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(assets/Rectangle-9.png) 0 0 no-repeat;
+}
+/*Caixa de inscrição, no rodapé*/
+.subscribe-box{
+    width: 625px;
+    height: 550px;
+    position: absolute;
+    left: 103px;
+    bottom: 218px;
+}
+        /*Título da caixa*/
+.subscribe-box h2{
+    width: 625px;
+    height: 134px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 81px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+        /*Inputs de nome, sobrenome e email + botão de enviar*/
+.first-name-input, .last-name-input, .email-input{
+    width: 542px;
+    height: 84px;
+    margin-left: 44px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background: rgba(255, 240, 240, 0.8);
+}
+.first-name-input{
+    margin-top: 34px;
+}
+.last-name-input, .email-input, .send{
+    margin-top: 20px;
+}
+.send{
+    width: 542px;
+    height: 70px;
+    margin-left: 44px;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgba(255, 240, 240, 0.8);
+    border: none;
+    border-radius: 10px;
+    background: #F49C9C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*Divisão para contatos - Último bloco*/
+.contact-box{
+    width: 100%;
+    height: 104px;
+    margin: 0px;
+    background: #F49C9C;
+    display: flex;
+    flex-direction: row;
+}
+.footer-icons{
+    width: 334px;
+    height: 50px;
+    margin: 27px 0px 0px 53px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu{
+    width: 846px;
+    height: 76px;
+    margin: 14px 54px 0px 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-about{
+    width: 290px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    font-weight: bold;
+    font-size: 43px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-blog{
+    width: 335px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-about a, .footer-blog a{
+    color: #000000;
 }
