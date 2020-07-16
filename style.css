@@ -3,6 +3,7 @@
     margin: 0px;
     text-decoration: none;
     font-family: 'Martel', serif;
+    box-sizing: border-box;
 }
 /*Header*/
     /*Primeiro bloco - Ícones para contato*/
@@ -320,3 +321,9 @@
 .footer-about a, .footer-blog a{
     color: #000000;
 }
+
+/*
+adicionar o hover.
+colocar a primeira imagem como background.
+tirar os positions e usar flex-box.
+*/
